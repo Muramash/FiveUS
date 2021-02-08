@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
-export default function League() {
-  return <h2>League</h2>;
+class League extends Component {
+  render(){
+    return <h2>League</h2>;
+  }
 }
+export {League};

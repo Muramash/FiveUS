@@ -94,6 +94,7 @@
   margin-top: -3em;
   margin-left: -1em;
   cursor:pointer;
+  z-index: 1000;
 }
 
 .signinButton{
@@ -152,13 +153,16 @@
   position: absolute;
   margin-left: 1.2em;
   margin-top: 1.5em;
+  z-index: 1000;
+  cursor: pointer;
 }
 
 .menuMain{
-  display:none!important;
-  position: absolute;
+  display:none;
+  position: fixed;
   height: 100%;
   width: 100%;
-  z-index: 10000;
+  z-index: 1000;
   background-color: #07356D;
+  overflow: hidden;
 }
