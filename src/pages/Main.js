@@ -35,10 +35,18 @@ class Main extends React.Component {
     console.log(this.state.menuOpened)
     if(!this.state.menuOpened){
       $(".menuMain").css("display", "flex");
+      $(".burgerButton").css("background-color", "#fff");
+      $(".crossBack").css("display", "block");
+      $(".burgerImage").css("display", "none")
+      $("body").css("overflow", "hidden")
       this.state.menuOpened = true;
     }
     else if(this.state.menuOpened){
         $(".menuMain").css("display", "none");
+        $(".burgerButton").css("background-color", "#D51317");
+        $(".crossBack").css("display", "none");
+        $(".burgerImage").css("display", "block")
+        $("body").css("overflow", "")
       this.state.menuOpened = false;
     }
   }

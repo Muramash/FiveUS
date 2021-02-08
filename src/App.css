@@ -166,3 +166,39 @@
   background-color: #07356D;
   overflow: hidden;
 }
+
+.crossBack {
+  width: 30px;
+  height: 30px;
+  left: 2.7rem;
+  top: 1.3rem;
+  position: absolute;
+  z-index: 10000;
+  display:none;
+  cursor: pointer;
+}
+
+.crossOne {
+  height: 30px;
+  width: 3px;
+  margin-left: 12px;
+  background-color: #07356D;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.crossTwo {
+  height: 30px;
+  width: 3px;
+  background-color: #07356D;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+
+.mainList{
+
+}
+
+.secondList{
+  
+}

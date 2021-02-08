@@ -44,6 +44,11 @@ class NavHeader extends React.Component {
                                 <div className="burgerButton" onClick={() => this.props.openMenu()}>
                                 </div>
                                 <img className="pl-2 burgerImage" src={burger} onClick={() => this.props.openMenu()}/>
+                                <div className="crossBack" onClick={() => this.props.openMenu()}>
+                                    <div class="crossOne">
+                                        <div class="crossTwo"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 justify-content-center">
