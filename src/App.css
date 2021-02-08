@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Integral_CF;
+  src: url("./assets/fonts/IntegralCF-ExtraBold.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: Avenir_Black;
+  src: url("./assets/fonts/AvenirLTStd-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Avenir_Book;
+  src: url("./assets/fonts/AvenirLTStd-Book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Avenir_Heavy;
+  src: url("./assets/fonts/AvenirLTStd-Heavy.otf") format("opentype");
+}
+
+
+:root {
+  --size-divisor: 1;
+}
+
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.mainLogo{
+  padding-top: 1rem;
+}
+
+.navContainer{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.signinButton{
+  display:flex;
+  background-color: #07356D;
+  color: #fff;
+  font-family: Integral_CF, Arial;
+  font-size: 13px;
+  align-self: end;
+  padding-top: 1.5rem;
+}
+
+.bookButton{
+  display:flex;
+  background-color: #D51317;
+  color: #fff;
+  font-family: Integral_CF, Arial;
+  font-size: 13px;
+  align-self: end;
+  padding-top: 1.5rem;
+}
+
+.searchButton{
+  display:flex;
+  background-color: #ffffff;
+  align-self: end;
+  padding-top: 1.5rem;
+}
+
+.buttonContent{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  padding: 0px 20px 20px 20px;
+}
+
+.buttonText{
+  display: flex;
+  align-self:center;
+}
+
+.signImage{
+  width: 35px;
+}
