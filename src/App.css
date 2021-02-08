@@ -24,6 +24,11 @@
   --size-divisor: 1;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
 
 .App {
   text-align: center;
@@ -73,6 +78,23 @@
   flex-direction: column;
 }
 
+.burgerButton{
+  display: flex;
+  background-color: #D51317;
+  color: #fff;
+  font-family: Integral_CF, Arial;
+  font-size: 13px;
+  align-self: end;
+  padding-top: 1.2rem;
+  width: 7rem;
+  height: 7rem;
+  -webkit-clip-path: polygon(50% 0%, 100% 30%, 82% 100%, 18% 100%, 0% 38%);
+  clip-path: polygon(50% 3%, 100% 30%, 82% 100%, 18% 100%, 0% 38%);
+  transform: rotate(40deg);
+  margin-top: -3em;
+  margin-left: -1em;
+}
+
 .signinButton{
   display:flex;
   background-color: #07356D;
@@ -80,7 +102,7 @@
   font-family: Integral_CF, Arial;
   font-size: 13px;
   align-self: end;
-  padding-top: 1.5rem;
+  padding-top: 1.2rem;
 }
 
 .bookButton{
@@ -90,16 +112,20 @@
   font-family: Integral_CF, Arial;
   font-size: 13px;
   align-self: end;
-  padding-top: 1.5rem;
+  padding-top: 1.2rem;
 }
 
 .searchButton{
   display:flex;
   background-color: #ffffff;
   align-self: end;
-  padding-top: 1.5rem;
+  padding-top: 1.2rem;
 }
-
+.buttonBurgerContent{
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+}
 .buttonContent{
   display: flex;
   flex-wrap: wrap;
@@ -113,5 +139,25 @@
 }
 
 .signImage{
-  width: 35px;
+  width: 33.5px;
+}
+
+.signSearch{
+  width: 41px;
+}
+
+.burgerImage{
+  width: 38px;
+  position: absolute;
+  margin-left: 1.2em;
+  margin-top: 1.5em;
+}
+
+.menuMain{
+  display:none!important;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: #07356D;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import './css/Main.css'
 import NavHeader from './../components/NavHeader.js'
 
@@ -14,6 +14,8 @@ import banner from './../assets/img/Desktop-7.jpg'
 
 import Slider from "react-slick";
 import { render } from '@testing-library/react';
+
+import { Link } from 'react-router-dom';
 
 export default function Main() {
   const settings = {
@@ -48,7 +50,7 @@ export default function Main() {
           <a href="#">Pick-up</a>
         </div>
         <div className="col">
-          <a href="#">Leagues</a>
+          <Link to="/league">Leagues</Link>
         </div>
         <div className="col">
           <a href="#">Tournaments</a>
@@ -58,7 +60,7 @@ export default function Main() {
         </div>
         <div className="col">
           <a href="#">Parties &amp; events</a>
-        </div>                                
+        </div>           
       </div>
 
       <div className="container">
@@ -160,11 +162,13 @@ export default function Main() {
 
       <div className="container">
         <div className="row">
-          <div className="col-md-12 col-lg-6">
-            <img class="bannerImage" src={banner}/>
-          </div>
-          <div className="col-md-12 col-lg-6">
-            <img class="bannerImage" src={banner}/>
+          <div className="col-md-12 col-lg-12 descriptionHeader">
+            <img className="bannerImage" src={banner}/>
+            <div className="descriptionBox">
+              <h1>What is Le Five?</h1>
+              <span>World Class 5v5 Soccer Experience for Youth &amp; Adults, lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. </span>
+              <button type="button" class="btn btn-lg seeMoreButton">Learn more</button>
+            </div>
           </div>
         </div>
       </div>
