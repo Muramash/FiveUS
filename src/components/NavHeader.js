@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 
 import logo from './../assets/img/lefive-logo-white.svg'
 import sign from './../assets/img/sign-icon.svg'
@@ -9,7 +10,9 @@ import burger from './../assets/img/burger-icon.svg'
 import { Link } from 'react-router-dom';
 
 export default function NavHeader() {
-
+    $(".menuMain").click(function(){
+        console.log("working")      
+      })
     return (
   
     <div className="navContainer d-flex">
@@ -56,4 +59,6 @@ export default function NavHeader() {
     </div>
 
     );
+    
+
 }
