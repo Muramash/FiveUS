@@ -164,7 +164,7 @@
   width: 100%;
   z-index: 1000;
   background-color: #07356D;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .crossBack {
@@ -196,9 +196,86 @@
 }
 
 .mainList{
-
+  text-align: left;
+  width:100%;
+  justify-content: center;
+  padding-top: 7rem;
 }
 
-.secondList{
-  
+.mainList ul li a{
+  color: white;
+  font-family: Avenir_Black, Arial;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor:pointer;
+  list-style-type:none;
+}
+
+.mainList ul li a:hover, .mainList ul li a:active{
+  color: #D51317;
+  font-family: Avenir_Black, Arial;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px){
+  .mainList ul li a{
+    color: white;
+    font-family: Avenir_Black, Arial;
+    font-size: 32px;
+    text-transform: uppercase;
+    cursor:pointer;
+    list-style-type:none;
+  }
+
+  .mainList ul li a:hover, .mainList ul li a:active{
+    color: #D51317;
+    font-family: Avenir_Black, Arial;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+}
+
+.menuMain{
+  justify-content: center;
+  width: 100%;
+}
+.menuMain .row {
+  justify-content: center;
+  align-content: inherit;
+  width:100%;
+}
+
+.dropdownItems{
+  background-color:#fff;
+  display:none;
+}
+
+.dropdownItems ul li a{
+  color: #07356D!important;
+  font-family: Avenir_Black, Arial;
+  text-transform: initial!important;
+  font-size: 20px!important;
+}
+
+.dropdownItems a:hover{
+  font-family: Avenir_Black, Arial;
+  color: #07356D!important;
+  text-decoration:underline;
+}
+
+.altList{
+  text-align:left;
+  padding-top: 7.5rem;
+}
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 5px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

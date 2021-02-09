@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import $ from 'jquery';
 
 import './css/Main.css'
@@ -32,7 +32,6 @@ class Main extends React.Component {
   componentDidMount() {
   }
   openMenu = () => {
-    console.log(this.state.menuOpened)
     if(!this.state.menuOpened){
       $(".menuMain").css("display", "flex");
       $(".burgerButton").css("background-color", "#fff");
@@ -69,7 +68,7 @@ class Main extends React.Component {
     return (
     
       <div className="container-fluid p-0">
-        <MainMenu openMenu={this.openMenu}/>
+        <MainMenu/>
         <div className="row">
           <div className="col">
               <div className="parallaxBackground">
@@ -198,7 +197,7 @@ class Main extends React.Component {
   
         <div className="container">
           <div className="row">
-            <div className="col-md-12 col-lg-12 descriptionHeader">
+            <div className="col descriptionHeader">
               <img className="bannerImage" alt="" src={banner}/>
               <div className="descriptionBox">
                 <h1>What is Le Five?</h1>

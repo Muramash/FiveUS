@@ -46,6 +46,7 @@
 .scheduleContainer{
     flex-wrap: wrap;
     flex-direction: column;
+    align-content: flex-start;
 }
 
 .sectionTitle{
@@ -138,6 +139,10 @@
   .slick-dots .slick-active button:before:hover {
     color: #0b376c!important;
   }  
+
+.sliderContainer{
+    width:100%!important;
+}
 
 .sliderContainer > span{
     display: flex;

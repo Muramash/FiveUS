@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from './../assets/img/lefive-logo-white.svg'
+import logo from './../assets/img/logo-lefive.svg'
 import sign from './../assets/img/sign-icon.svg'
 import cal from './../assets/img/cal-icon.svg'
 import search from './../assets/img/search-icon.svg'
@@ -8,7 +8,7 @@ import burger from './../assets/img/burger-icon.svg'
 
 import { Link } from 'react-router-dom';
 
-class NavHeader extends React.Component {
+class SecondHeader extends React.Component {
 
     constructor(props) {
         super(props);
@@ -66,4 +66,4 @@ class NavHeader extends React.Component {
     }
 };
 
-export {NavHeader};
+export {SecondHeader};
