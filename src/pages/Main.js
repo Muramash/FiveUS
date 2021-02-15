@@ -101,7 +101,7 @@ class Main extends React.Component {
         <div className="container">
           <div className="row">
   
-            <div className="col-md-12 col-lg-6 d-flex p-1 scheduleContainer">
+            <div className="col-md-12 col-lg-6 d-flex scheduleContainer">
                 <h2 className="sectionTitle">Schedules</h2>
   
                 <div className="scheduleCard">
@@ -141,7 +141,7 @@ class Main extends React.Component {
                 </div>
             </div>
   
-            <div className="col-md-12 col-lg-6 p-1">
+            <div className="col-md-12 col-lg-6">
               <h2 className="sectionTitle">News From Le Five</h2>
               <div>
                 <Slider {...settings}>
@@ -155,6 +155,7 @@ class Main extends React.Component {
                       <span>AdultTournaments</span>
                     </div>
                     <h3>Lorem ipsum dolor sit amet</h3>
+                    <hr/>
                   </div>
                   <div className="sliderContainer">
                     <span>FEV 20, 2021</span>
@@ -169,6 +170,7 @@ class Main extends React.Component {
                       <span>Div</span>
                     </div>
                     <h3>Lorem ipsum dolor sit amet</h3>
+                    <hr/>
                   </div>
                   <div className="sliderContainer">
                     <span>MAR 03, 2021</span>
@@ -180,6 +182,7 @@ class Main extends React.Component {
                       <span>Ipsum</span>
                     </div>
                     <h3>Lorem ipsum dolor sit amet</h3>
+                    <hr/>
                   </div>
                 </Slider>
               </div>
@@ -202,12 +205,15 @@ class Main extends React.Component {
               <div className="descriptionBox">
                 <h1>What is Le Five?</h1>
                 <span>World Class 5v5 Soccer Experience for Youth &amp; Adults, lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. </span>
-                <button type="button" className="btn btn-lg seeMoreButton">Learn more</button>
+                <button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
               </div>
             </div>
           </div>
         </div>
-  
+
+        <div className="p-5">
+        </div>
+
       </div>  
       
       );

@@ -19,6 +19,9 @@
   src: url("./assets/fonts/AvenirLTStd-Heavy.otf") format("opentype");
 }
 
+.headerRow{
+  flex-wrap:initial!important;
+}
 
 :root {
   --size-divisor: 1;
@@ -217,21 +220,24 @@
   font-size: 22px;
   text-transform: uppercase;
 }
+.dropdownLogo .arrow.arrow-bar::before:hover{
+  background-color: #D51317
+}
 
 @media (min-width: 992px){
   .mainList ul li a{
     color: white;
     font-family: Avenir_Black, Arial;
-    font-size: 32px;
+    font-size: 32px!important;
     text-transform: uppercase;
     cursor:pointer;
     list-style-type:none;
   }
 
-  .mainList ul li a:hover, .mainList ul li a:active{
+  .mainList ul li a:hover, .mainList ul li a:active, .mainList ul li a .dropdownLogo .arrow.arrow-bar::before:hover{
     color: #D51317;
     font-family: Avenir_Black, Arial;
-    font-size: 32px;
+    font-size: 32px!important;
     text-transform: uppercase;
   }
 }
@@ -251,6 +257,34 @@
   display:none;
 }
 
+@media (max-width: 992px){
+  .dropdownItems{
+    background-color: #fff;
+    display: none;
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    text-align: center;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  .pSearch{
+    padding-top: 14px;
+    padding-bottom: 22px;
+  }
+}
+@media (max-width: 1160px){
+  .pSearch{
+    padding-top: 14px;
+    padding-bottom: 4px;
+  }
+}
+
+.activeMenu{
+  color:#D51317!important;
+}
+
 .dropdownItems ul li a{
   color: #07356D!important;
   font-family: Avenir_Black, Arial;
@@ -264,18 +298,75 @@
   text-decoration:underline;
 }
 
+.subDropdown{
+  display: flex;
+  margin: 0 auto;
+  left: 50vw;
+  right: 50vw;
+  text-align: left;
+  width: 17rem;
+}
+
+.dropdownLogo{
+  display: flex;
+  position: relative;
+  right: -15rem;
+  top: -1.7rem;
+}
+
 .altList{
   text-align:left;
   padding-top: 7.5rem;
 }
 
-.arrow {
-  border: solid #fff;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 5px;
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
+.arrow {
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  width: 12px;
+}
+.arrow::after {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+.arrowbarAccessor, .arrow.arrow-bar::before {
+  bottom: 1px;
+  content: "";
+  height: 30px;
+  position: absolute;
+  right: 0;
+  transform-origin: bottom;
+  width: 2px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color:#fff
+}
+.arrow.is-right {
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+  right: -10rem;
+  top: -0.5rem;
+}
+

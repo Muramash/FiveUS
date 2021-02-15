@@ -63,6 +63,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-bottom:1rem;
+    width: 100vw;
 }
 
 .schedulePicto{
@@ -85,6 +86,15 @@
     line-height: 36px;
     text-transform: uppercase;
 }
+
+@media (max-width: 500px){
+    .scheduleText > span{
+        font-family: Avenir_Black, Arial;
+        font-size: 25px;
+        line-height: 36px;
+        text-transform: uppercase;
+    }
+  }
 
 .scheduleGreen{
     background: linear-gradient(to right, #007A36, rgba(0,0,0,0), #007A36);
@@ -196,14 +206,34 @@
 
 .descriptionBox{
     background-color: #07356D;
-    position: absolute;
-    width: 500px;
     display: flex;
     flex-wrap: wrap;
-    right:0;
+    height: 435px;
+    right: 0;
+    flex: 0.35 1;
+    z-index: 100;
+    padding: 50px;
+    color: #fff;
+    text-align: left;
+}
+
+.descriptionBox>h1{
+    font-family: Integral_CF, "Arial";
+    font-size: 66px;
+    line-height: 62px;
+    padding-bottom:1rem;
+}
+.descriptionBox>span{
+    font-family: Avenir_Book, "Arial";
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .descriptionHeader{
     display: flex;
     justify-content: flex-end;
+}
+
+.learnMore{
+    font-size: 18px;
 }

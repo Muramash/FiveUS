@@ -25,7 +25,7 @@ class SecondHeader extends React.Component {
 
             <div className="navContainer d-flex">
         
-                    <div className="row">
+                    <div className="row headerRow">
                         <div className="col-md-6 col-lg-4 justify-content-start">
                             <div className="buttonBurgerContent">
                                 <div className="burgerButton" onClick={() => this.props.openMenu()}>

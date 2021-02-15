@@ -25,7 +25,7 @@ class NavHeader extends React.Component {
 
             <div className="navContainer d-flex">
         
-                    <div className="row">
+                    <div className="row headerRow">
                         <div className="col-md-6 col-lg-4 justify-content-start">
                             <div className="buttonBurgerContent">
                                 <div className="burgerButton" onClick={() => this.props.openMenu()}>
@@ -56,7 +56,7 @@ class NavHeader extends React.Component {
                             </div>
                             <div className="searchButton">
                                 <div className="buttonContent">
-                                    <img className="pl-2 signSearch" alt="" src={search}/>
+                                    <img className="pl-2 signSearch pSearch" alt="" src={search}/>
                                 </div>
                             </div>
                         </div>
