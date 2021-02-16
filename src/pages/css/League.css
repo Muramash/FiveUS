@@ -1,10 +1,182 @@
 .titleBackground {
     background-image: url("./../../assets/img/Desktop-7.jpg");
   
-    height: 300px;
+    height: 400px;
   
+    background-attachment: fixed;
+    background-position: center -13em;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .titleOpaque{
+    background: rgba(7, 53, 109, 0.35);
+    z-index: 100;
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+@media (max-width: 992px){
+  .titleBackground {
+    background-image: url("./../../assets/img/Desktop-7.jpg");
+  
+    height: 300px;
+  
+    background-attachment: fixed;
+    background-position: center -13em;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .titleOpaque{
+    background: rgba(7, 53, 109, 0.35);
+    z-index: 100;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+  .titleLogo{
+    opacity: 0.6;
+    width: 212px;
+    margin-top: 5em;
+    height: 215px;
+  }
+
+.pageTitle{
+    padding: 6px;
+    width: 100%;
+}
+
+.pageTitle > span{
+    font-family: Avenir_Black, Arial;
+    font-size: 43px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px){
+  .pageTitle > span{
+    font-family: Avenir_Black, Arial;
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+}
+.pageTitleGreen{
+    background: linear-gradient(to right, #007A36, rgba(0,0,0,0), #007A36);
+}
+.pageTitleGreen > span{
+    color: #007A36;
+}
+
+.pageTitleRed{
+    background: linear-gradient(to right, #D51317, rgba(0,0,0,0), #D51317);
+}
+.pageTitleRed > span{
+    color: #D51317;
+}
+
+.pageTitleBlue{
+    background: linear-gradient(to right, #23B9D6, rgba(0,0,0,0), #23B9D6);
+}
+.pageTitleBlue > span{
+    color: #23B9D6;
+}
+
+.pageSub{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: Avenir_Heavy, Arial;
+  color: #07356D;
+}
+
+.containerBlocImageText{
+
+}
+
+.nopadding{
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+}
+
+.imageBloc{
+  width:100%;
+  z-index: 2;
+}
+
+.textBloc{
+  display:flex;
+  flex-wrap: wrap;
+  background-color: #F2F2F2;
+  text-align: left;
+  padding: 20px;
+}
+
+.textBloc > h2 {
+  font-size: 36px;
+  line-height: 34px;
+  font-family: Integral_CF, Arial;
+  color: #07356D;
+}
+
+.textBloc > span{
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Avenir_Book, Arial;
+  color: #07356D;
+}
+
+.textBloc > ul > li{
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Avenir_Book, Arial;
+  list-style: none;
+  color: #07356D;
+}
+
+@media (max-width: 992px){
+  .blocImage{
+    width:100%;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 992px){
+  .positionRight{
+    margin-top: 4em;
+    position: relative;
+    right: 4em;
+    padding-left: 10em!important;
+    z-index: 1;
+  }
+  .positionLeft{
+    margin-top: 4em;
+    position: relative;
+    right: 35em;
+    padding-right: 10em!important;
+    z-index: 1;
+  }
+  .positionImgRight{
+    left: 26.8em;
+  }
+
+  .textBloc{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    text-align: left;
+    padding: 60px;
+  }
+}
+
+.blocButtonContainer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

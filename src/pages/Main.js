@@ -30,6 +30,11 @@ class Main extends React.Component {
     }
   }
   componentDidMount() {
+    $(".menuMain").css("display", "none");
+    $(".burgerButton").css("background-color", "#D51317");
+    $(".crossBack").css("display", "none");
+    $(".burgerImage").css("display", "block")
+    $("body").css("overflow", "")
   }
   openMenu = () => {
     if(!this.state.menuOpened){
@@ -38,6 +43,7 @@ class Main extends React.Component {
       $(".crossBack").css("display", "block");
       $(".burgerImage").css("display", "none")
       $("body").css("overflow", "hidden")
+      $(".fixednavContainer").css("position", "inherit")
       this.state.menuOpened = true;
     }
     else if(this.state.menuOpened){
@@ -46,6 +52,7 @@ class Main extends React.Component {
         $(".crossBack").css("display", "none");
         $(".burgerImage").css("display", "block")
         $("body").css("overflow", "")
+        $(".fixednavContainer").css("position", "fixed")
       this.state.menuOpened = false;
     }
   }
