@@ -43,7 +43,7 @@
 }
 
   .titleLogo{
-    opacity: 0.6;
+    opacity: 0.6!important;
     width: 212px;
     margin-top: 5em;
     height: 215px;
@@ -140,18 +140,19 @@
   color: #07356D;
 }
 
+.blocImage{
+  width:100%;
+  z-index: 2;
+}
 @media (max-width: 992px){
-  .blocImage{
-    width:100%;
-    z-index: 2;
-  }
+
 }
 
 @media (min-width: 992px){
   .positionRight{
     margin-top: 4em;
     position: relative;
-    right: 4em;
+    right: 8em;
     padding-left: 10em!important;
     z-index: 1;
   }
@@ -179,4 +180,21 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.backSlideImage{
+  width: 100%;
+}
+
+.sliderMainContainer{
+  background-image: url("./../../assets/img/bg-img.jpg");
+  height: 32em;
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+
+.slick-dots{
+  z-index:100
 }

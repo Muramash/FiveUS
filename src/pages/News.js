@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
 class News extends Component {
-  render(){
-    return <h2>News</h2>;
-  }
+  	render(){
+    	return <h2>News</h2>;
+  	}
 }
+
 export {News};

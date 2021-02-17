@@ -97,6 +97,16 @@
       z-index: 500;
       background-color: white;
   }
+  .initialnavContainer{
+    flex-wrap: wrap;
+      flex-direction: column;
+      top: 0;
+      width: 100%;
+      height: 83px;
+      position: initial;
+      z-index: 500;
+      background-color: white;
+  }
 }
 
 .burgerButton{

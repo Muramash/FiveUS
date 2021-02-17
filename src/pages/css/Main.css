@@ -237,3 +237,17 @@
 .learnMore{
     font-size: 18px;
 }
+
+.contentTextTrio{
+    background-color: #F2F2F2;
+}
+
+.blocTextTrio > h2{
+    color: #07356D;
+    font-family: Integral_CF, Arial;
+    font-size: 66px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 62px;
+}
+
