@@ -176,6 +176,15 @@
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  .positionImgRight{
+    left: 21.5em;
+  }
+  .positionBlocLeft{
+    right: 29.4em;
+  }
+}
+
 .blocButtonContainer{
   display: flex;
   width: 100%;

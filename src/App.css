@@ -186,6 +186,7 @@
   margin-top: 1.5em;
   z-index: 1000;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .menuMain{
@@ -396,5 +397,9 @@
   transform: rotate(315deg);
   right: -10rem;
   top: -0.5rem;
+}
+
+.arrow.arrow-bar.focusedArrowHover::before{
+  background-color: #D51317;
 }
 

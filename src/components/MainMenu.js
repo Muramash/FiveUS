@@ -9,6 +9,7 @@ class MainMenu extends React.Component {
         super(props);
         this.state = {
             context: props.context,
+            elementClicked: ""
         }
       }
     componentDidMount() {
@@ -20,7 +21,7 @@ class MainMenu extends React.Component {
             $("#dropdownMenu"+i).css("display","none")
             $("#dropdownMenu"+i+"-lg").css("display","none")
             $("#dropdownTitle"+i).removeClass("activeMenu")
-            // $("#wideArrow-"+i).css("background-color","#fff")
+            $("#wideArrow-"+i).removeClass("focusedArrowHover")
         }
         $(".arrow").removeClass("up")
         $(".arrow").addClass("down")
@@ -30,7 +31,24 @@ class MainMenu extends React.Component {
         $("#"+targetedDropdown+"-lg").css("display", "block");
         $("#"+targetedDropdown+"-lg").addClass("activeMenu");
         $("#"+targetedTitle).addClass("activeMenu")
-        // $("#"+targetedWideArrow).css("background-color","#D51317")
+        $("#"+targetedWideArrow).addClass("focusedArrowHover")
+        console.log("1",this.elementClicked)
+        this.elementClicked = $("#"+targetedWideArrow);
+        console.log("2",this.elementClicked)
+      }
+
+      //see here what's going on
+      hoverArrow = (isHovered, target) => {
+          let clickedElement = $("#"+this.elementClicked).attr('id');
+          console.log('target', target);
+          console.log('clicked', this.elementClicked);
+        if(isHovered){
+            $("#"+target).addClass("focusedArrowHover");
+        }
+        else if(target !== clickedElement){
+            console.log("i'm in")
+            $("#"+target).removeClass("focusedArrowHover");
+        }
       }
     render() {
         return (
@@ -43,7 +61,7 @@ class MainMenu extends React.Component {
                             <a className="nav-link">What's Le Five?</a>
                         </li>
                         <li className="nav-item dropdown">
-                            <a id="dropdownTitle1" className="nav-link" onClick={() => this.dropdownBehaviour("dropdownMenu1", "arrow-1","wideArrow-1","dropdownTitle1")}>Adult Soccer 
+                            <a id="dropdownTitle1" className="nav-link" onMouseEnter={() => this.hoverArrow(true, "wideArrow-1") } onMouseLeave={() => this.hoverArrow(false, "wideArrow-1") } onClick={() => this.dropdownBehaviour("dropdownMenu1", "arrow-1","wideArrow-1","dropdownTitle1")}>Adult Soccer 
                             <div class="dropdownLogo">
                                 <i id="arrow-1" class="arrow down d-lg-none"></i>
                                 <span id="wideArrow-1" class="arrow arrow-bar is-right d-none d-lg-block"></span>
@@ -68,7 +86,7 @@ class MainMenu extends React.Component {
                         </div>
                         </li>
                         <li className="nav-item">
-                            <a id="dropdownTitle2" className="nav-link" onClick={() => this.dropdownBehaviour("dropdownMenu2", "arrow-2","wideArrow-2","dropdownTitle2")}>Youth Soccer 
+                            <a id="dropdownTitle2" className="nav-link" onMouseEnter={() => this.hoverArrow(true, "wideArrow-2") } onMouseLeave={() => this.hoverArrow(false, "wideArrow-2") } onClick={() => this.dropdownBehaviour("dropdownMenu2", "arrow-2","wideArrow-2","dropdownTitle2")}>Youth Soccer 
                             <div class="dropdownLogo">
                                 <i id="arrow-2" class="arrow down d-lg-none"></i>
                                 <span id="wideArrow-2" class="arrow arrow-bar is-right d-none d-lg-block"></span>

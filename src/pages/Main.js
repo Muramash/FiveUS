@@ -14,6 +14,10 @@ import slider1 from './../assets/img/imageCarousel1.jpg'
 import slider2 from './../assets/img/stocktempo.jpg'
 import slider3 from './../assets/img/stocktempo2.jpg'
 import banner from './../assets/img/Desktop-7.jpg'
+import penta2 from './../assets/img/motif-penta2.png'
+import trio1 from './../assets/img/facilities-01-img.jpg'
+import trio2 from './../assets/img/facilities-02-img.jpg'
+import trio3 from './../assets/img/facilities-03-img.jpg'
 
 import Slider from "react-slick";
 import { render } from '@testing-library/react';
@@ -54,7 +58,7 @@ openMenu = () => {
         $("body").css("overflow", "")
         $(".fixednavContainer").css("position", "absolute")
       	this.state.menuOpened = false;
-    }
+	}
 }
 
 render(){
@@ -70,7 +74,7 @@ render(){
 		fade: true,
 		cssEase: 'linear',
 		arrows: false,
-    };
+	};
 
 	return (
     
@@ -241,18 +245,24 @@ render(){
             		</div>
           		</div>
 
-          		<div className="p-5">
+          		<div className="largeSpacer">
+					  <img className="d-none d-lg-block secondPenta" src={penta2} alt=""/>
           		</div>
 
           		<div className="row">
             		<div className="col contentTextTrio">
               			<div className="blocTextTrio">
-							<h2>WORLD CLASS FACILITY</h2>
-							<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non.</span>
+							<h2 className="pb-4">WORLD CLASS FACILITY</h2>
+							<span className="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non.</span>
 							<button type="button" className="btn btn-lg seeMoreButton learnMore">See our facilities</button>
 						</div>
-              			<div className="imageTrioContainer">
-
+              			<div className="d-none d-lg-block imageTrioContainer">
+							<div className="firstBlocTrio">
+								<img className="imageFirstBloc" src={trio1} alt=""/>
+								<div className="trioFirstText scheduleRed">
+									<span>Leagues</span>
+								</div>
+							</div>
               			</div>
             		</div>
           		</div>

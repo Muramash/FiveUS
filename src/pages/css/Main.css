@@ -240,8 +240,16 @@
 
 .contentTextTrio{
     background-color: #F2F2F2;
+    width:100%;
 }
-
+.blocTextTrio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+    text-align: left;
+    padding: 60px;
+}
 .blocTextTrio > h2{
     color: #07356D;
     font-family: Integral_CF, Arial;
@@ -251,3 +259,38 @@
     line-height: 62px;
 }
 
+.blocTextTrio{
+    color: #07356D;
+}
+
+.largeSpacer{
+    padding: 2em;
+}
+@media (min-width: 992px){
+    .largeSpacer{
+        padding: 7em;
+    }
+}
+
+.secondPenta{
+    position: absolute;
+    left: 8%;
+    bottom: -87%;
+    z-index: -1;
+}
+
+.trioFirstText{
+    width: calc(300px / var(--size-divisor));
+}
+
+.trioFirstText > span{
+    font-family: Avenir_Black, Arial;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.firstBlocTrio{
+    display: flex;
+    flex-flow: column;
+}

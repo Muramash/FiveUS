@@ -1,10 +1,12 @@
 import React from 'react';
+import $ from 'jquery';
 
 import logo from './../assets/img/lefive-logo-white.svg'
 import sign from './../assets/img/sign-icon.svg'
 import cal from './../assets/img/cal-icon.svg'
 import search from './../assets/img/search-icon.svg'
 import burger from './../assets/img/burger-icon.svg'
+
 
 import { Link } from 'react-router-dom';
 
@@ -19,7 +21,40 @@ class NavHeader extends React.Component {
     componentDidMount() {
     }
 
+    burgerAnimOnHover = (angle) => {
+        let burgerImage = $(".burgerImage");
+
+            if(angle == 90){
+                burgerImage.css("margin-left", "1.5em");
+                burgerImage.css("margin-top", "1.2em");
+                $({deg: 0}).animate({deg: angle}, {
+                    duration: 500,
+                    step: function(now){
+                        burgerImage.css({
+                            transform: 'rotate('+ now +'deg)'
+                        })
+                    }
+                })
+            }
+            else{
+                burgerImage.css("margin-left", "1.2em");
+                burgerImage.css("margin-top", "1.5em");
+                $({deg: 90}).animate({deg: angle}, {
+                    duration: 500,
+                    step: function(now){
+                        burgerImage.css({
+                            transform: 'rotate('+ now +'deg)'
+                        })
+                    }
+                })
+            }
+    }
+    
     render() {
+
+
+    
+
         
         return (
 
@@ -28,7 +63,7 @@ class NavHeader extends React.Component {
                     <div className="row headerRow">
                         <div className="col-md-6 col-lg-4 justify-content-start">
                             <div className="buttonBurgerContent">
-                                <div className="burgerButton" onClick={() => this.props.openMenu()}>
+                                <div className="burgerButton" onMouseEnter={() => this.burgerAnimOnHover(90) } onMouseLeave={() => this.burgerAnimOnHover(0) } onClick={() => this.props.openMenu()}>
                                 </div>
                                 <img className="pl-2 burgerImage" alt="" src={burger} onClick={() => this.props.openMenu()}/>
                                 <div className="crossBack" onClick={() => this.props.openMenu()}>

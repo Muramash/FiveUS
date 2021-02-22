@@ -131,7 +131,7 @@ render(){
             	<div className="col-12 col-lg-6 nopadding positionImgRight imageBloc">
               		<img className="blocImage" alt="" src={secondImage}/>
             	</div>
-            	<div className="col-12 col-lg-6 textBloc positionLeft">
+            	<div className="col-12 col-lg-6 textBloc positionBlocLeft positionLeft">
               		<h2 className="pb-3">LE FIVE YOUTH SOCCER LEAGUES</h2>
               		<span className="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non.</span>
               		<div className="blocButtonContainer">
