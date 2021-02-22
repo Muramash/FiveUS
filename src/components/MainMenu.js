@@ -37,17 +37,15 @@ class MainMenu extends React.Component {
         console.log("2",this.elementClicked)
       }
 
-      //see here what's going on
       hoverArrow = (isHovered, target) => {
-          let clickedElement = $("#"+this.elementClicked).attr('id');
-          console.log('target', target);
-          console.log('clicked', this.elementClicked);
         if(isHovered){
             $("#"+target).addClass("focusedArrowHover");
-        }
-        else if(target !== clickedElement){
-            console.log("i'm in")
-            $("#"+target).removeClass("focusedArrowHover");
+        } else {
+            const clickedElement = (this.elementClicked ? this.elementClicked.attr('id') : null);
+
+            if(clickedElement !== target) {
+                $("#"+target).removeClass("focusedArrowHover");
+            }
         }
       }
     render() {
