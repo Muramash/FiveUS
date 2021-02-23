@@ -32,9 +32,7 @@ class MainMenu extends React.Component {
         $("#"+targetedDropdown+"-lg").addClass("activeMenu");
         $("#"+targetedTitle).addClass("activeMenu")
         $("#"+targetedWideArrow).addClass("focusedArrowHover")
-        console.log("1",this.elementClicked)
         this.elementClicked = $("#"+targetedWideArrow);
-        console.log("2",this.elementClicked)
       }
 
       hoverArrow = (isHovered, target) => {

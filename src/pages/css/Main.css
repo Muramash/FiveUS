@@ -238,17 +238,43 @@
     font-size: 18px;
 }
 
+
+@media (max-width: 992px){
+    .largeSpacer-1{
+        padding: 2em;
+    }
+}
+
+.secondPenta{
+    position: relative;
+    left: -8%;
+    top: -12em;
+    z-index: -1;
+}
+
 .contentTextTrio{
     background-color: #F2F2F2;
     width:100%;
+    display: flex!important;
+    flex-direction: column;
 }
 .blocTextTrio{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 50%;
+    width: 100%;
     text-align: left;
     padding: 60px;
+}
+@media (min-width: 992px){
+    .blocTextTrio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 50%;
+        text-align: left;
+        padding: 60px;
+    }
 }
 .blocTextTrio > h2{
     color: #07356D;
@@ -261,36 +287,98 @@
 
 .blocTextTrio{
     color: #07356D;
+    display:flex!important;
 }
 
-.largeSpacer{
-    padding: 2em;
-}
-@media (min-width: 992px){
-    .largeSpacer{
-        padding: 7em;
-    }
+.trioText{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
-.secondPenta{
-    position: absolute;
-    left: 8%;
-    bottom: -87%;
-    z-index: -1;
-}
-
-.trioFirstText{
-    width: calc(300px / var(--size-divisor));
-}
-
-.trioFirstText > span{
+.trioText > span{
     font-family: Avenir_Black, Arial;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
 }
 
+.imageTrioContainer{
+    display:flex!important;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
 .firstBlocTrio{
+    position: absolute;
+    top: -9em;
+    right: 7em;
+}
+
+.secondBlocTrio{
+    position: absolute;
+    top: 7em;
+    right: 3em;
+}
+
+.thirdBlocTrio{
+    position: absolute;
+    top: 23em;
+    right: 5em;
+}
+
+.largeSpacer-2{
+    padding: 2em;
+}
+@media (min-width: 992px){
+    .largeSpacer-2{
+        padding: 6em;
+    }
+}
+
+.soccerContainer{
     display: flex;
-    flex-flow: column;
+    justify-content: initial;
+    background-color:#07356D;
+}
+
+.soccerBloc{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+@media (min-width: 992px){
+    .soccerContainer{
+        display: flex;
+        justify-content: center;
+        background-color:#07356D;
+    }
+    
+    .soccerBloc{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-bottom: 3em;
+        padding-top: 3em;
+    }
+}
+
+.soccerBloc > h2 {
+    font-family: Integral_CF, "Arial";
+    font-size: 66px;
+    line-height: 62px;
+    padding-bottom:1rem;
+    width: 50%;
+    text-align: initial;
+    color: #fff;
+}
+
+.soccerBloc > span {
+    font-family: Avenir_Book, "Arial";
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }

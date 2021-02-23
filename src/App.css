@@ -134,7 +134,7 @@
   color: #fff;
   font-family: Integral_CF, Arial;
   font-size: 13px;
-  align-self: end;
+  align-self: flex-start;
   padding-top: 1.2rem;
 }
 
@@ -144,14 +144,14 @@
   color: #fff;
   font-family: Integral_CF, Arial;
   font-size: 13px;
-  align-self: end;
+  align-self: flex-start;
   padding-top: 1.2rem;
 }
 
 .searchButton{
   display:flex;
   background-color: #ffffff;
-  align-self: end;
+  align-self: flex-start;
   padding-top: 1.2rem;
 }
 .buttonBurgerContent{

@@ -18,6 +18,8 @@ import penta2 from './../assets/img/motif-penta2.png'
 import trio1 from './../assets/img/facilities-01-img.jpg'
 import trio2 from './../assets/img/facilities-02-img.jpg'
 import trio3 from './../assets/img/facilities-03-img.jpg'
+import double1 from './../assets/img/istockphoto-961249446-2048x2048.jpg'
+import double2 from './../assets/img/Charte_graphique-17.jpg'
 
 import Slider from "react-slick";
 import { render } from '@testing-library/react';
@@ -245,7 +247,7 @@ render(){
             		</div>
           		</div>
 
-          		<div className="largeSpacer">
+          		<div className="largeSpacer-1">
 					  <img className="d-none d-lg-block secondPenta" src={penta2} alt=""/>
           		</div>
 
@@ -257,16 +259,49 @@ render(){
 							<button type="button" className="btn btn-lg seeMoreButton learnMore">See our facilities</button>
 						</div>
               			<div className="d-none d-lg-block imageTrioContainer">
-							<div className="firstBlocTrio">
-								<img className="imageFirstBloc" src={trio1} alt=""/>
-								<div className="trioFirstText scheduleRed">
-									<span>Leagues</span>
+							<div data-aos="fade-left"  className="d-none d-lg-block firstBlocTrio">
+								<img className="trioImage" src={trio1} alt=""/>
+								<div className="trioText scheduleRed">
+									<span>5V5 SOCCER FIELDS</span>
+								</div>
+							</div>
+							<div data-aos="fade-left"  className="d-none d-lg-block secondBlocTrio">
+								<img className="trioImage" src={trio2} alt=""/>
+								<div className="trioText scheduleRed">
+									<span>NEW TURF GENERATION</span>
+								</div>
+							</div>
+							<div data-aos="fade-left"  className="d-none d-lg-block thirdBlocTrio">
+								<img className="trioImage" src={trio3} alt=""/>
+								<div className="trioText scheduleRed">
+									<span>SPORTS AND BAR LOUNGE</span>
 								</div>
 							</div>
               			</div>
             		</div>
           		</div>
         	</div>
+
+			<div className="largeSpacer-2">
+				
+			</div>
+
+			<div className="container-fluid soccerContainer">
+				<div className="row">
+					<div className="col soccerBloc">
+						<h2>ADULT SOCCER</h2>
+						<img src={double1} alt=""/>
+						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+						<button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
+					</div>
+					<div className="col soccerBloc">
+						<h2>YOUTH SOCCER</h2>
+						<img src={double2} alt=""/>
+						<span>Play, Enjoy and hone your skills. 5v5 is the best development tool</span>
+						<button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
+					</div>
+				</div>
+			</div>
 
 
 			
