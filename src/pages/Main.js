@@ -20,6 +20,8 @@ import trio2 from './../assets/img/facilities-02-img.jpg'
 import trio3 from './../assets/img/facilities-03-img.jpg'
 import double1 from './../assets/img/istockphoto-961249446-2048x2048.jpg'
 import double2 from './../assets/img/Charte_graphique-17.jpg'
+import firstImage from './../assets/img/rentals-img.jpg'
+import secondImage from './../assets/img/parties-img.jpg'
 
 import Slider from "react-slick";
 import { render } from '@testing-library/react';
@@ -123,6 +125,7 @@ render(){
 						className="scheduleCard" 
 						data-aos="fade-right" 
 						data-aos-delay="250"
+						data-aos-mirror="true"
 						>
 							<div className="schedulePicto">
 								<img className="picto1" alt="" src={picto1}/>
@@ -288,19 +291,56 @@ render(){
 
 			<div className="container-fluid soccerContainer">
 				<div className="row">
-					<div className="col soccerBloc">
+					<div className="col soccerBloc" data-aos="zoom-in">
 						<h2>ADULT SOCCER</h2>
 						<img src={double1} alt=""/>
 						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
 						<button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
 					</div>
-					<div className="col soccerBloc">
+					<div className="col soccerBloc" data-aos="zoom-in">
 						<h2>YOUTH SOCCER</h2>
 						<img src={double2} alt=""/>
 						<span>Play, Enjoy and hone your skills. 5v5 is the best development tool</span>
 						<button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
 					</div>
 				</div>
+			</div>
+
+			<div className="largeSpacer-3">
+				
+			</div>
+
+			<div className="container pl-4 pr-4">
+
+				<div className="row fade-right" data-aos="fade-right">
+					<div className="col-12 col-lg-6 nopadding imageBloc">
+						<img className="blocImage" alt="" src={firstImage}/>
+					</div>
+					<div className="col-12 col-lg-6 textBloc positionRight">
+						<h2 className="pb-3">FIELDS RENTALS</h2>
+						<span className="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non, imperdiet vel nisl.</span>
+						<button type="button" className="btn btn-lg seeMoreButton">Learn more</button>
+					</div>
+				</div>
+
+				<div className="p-4">
+				</div>
+
+				<div className="row" data-aos="fade-left">
+					<div className="col-12 col-lg-6 nopadding positionImgRight imageBloc">
+						<img className="blocImage" alt="" src={secondImage}/>
+					</div>
+					<div className="col-12 col-lg-6 textBloc positionBlocLeft positionLeft">
+						<h2 className="pb-3">PARTIES AND EVENTS</h2>
+						<span className="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non, imperdiet vel nisl.</span>
+						<button type="button" className="btn btn-lg seeMoreButton">Learn more</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div className="largeSpacer-3">
+				
 			</div>
 
 
