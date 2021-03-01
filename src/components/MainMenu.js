@@ -120,7 +120,7 @@ class MainMenu extends React.Component {
                             <a className="nav-link">News</a>
                         </li>
                         <li>
-                            <a className="nav-link">Le Five Facilities</a>
+                            <Link to="/facilities" className="nav-link">Le Five Facilities</Link>
                         </li>
                         <li>
                             <a className="nav-link">FAQ</a>

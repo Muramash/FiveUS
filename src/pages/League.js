@@ -82,7 +82,7 @@ render(){
 
         <div className="row">
         	<div className="col">
-            	<div className="titleBackground">
+            	<div className="titleBackgroundLea">
             		<div className="titleOpaque">
                 		<img className="titleLogo" data-aos="zoom-in" alt="" src={league}/>
               		</div>

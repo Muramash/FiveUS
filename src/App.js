@@ -14,7 +14,7 @@ import './App.css';
 
 import { Main } from './pages/Main.js';
 import { League } from './pages/League.js';
-import { News } from './pages/News.js';
+import { Facilities } from './pages/Facilities.js';
 
 class App extends Component {
 
@@ -47,8 +47,8 @@ class App extends Component {
 						<Route path="/league">
 							<League />
 						</Route>
-						<Route path="/news">
-							<News />
+						<Route path="/facilities">
+							<Facilities />
 						</Route>
 					</Switch>
 				</BrowserRouter>

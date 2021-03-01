@@ -4,6 +4,7 @@ import $ from 'jquery';
 import './css/Main.css'
 import { NavHeader } from './../components/NavHeader.js'
 import { MainMenu } from './../components/MainMenu.js'
+import { Footer } from './../components/Footer.js'
 
 import penta from './../assets/img/motif-penta.png'
 import picto1 from './../assets/img/pickup-icon.svg'
@@ -254,7 +255,7 @@ render(){
 					  <img className="d-none d-lg-block secondPenta" src={penta2} alt=""/>
           		</div>
 
-          		<div className="row">
+          		<div className="row padSmall">
             		<div className="col contentTextTrio">
               			<div className="blocTextTrio">
 							<h2 className="pb-4">WORLD CLASS FACILITY</h2>
@@ -291,13 +292,13 @@ render(){
 
 			<div className="container-fluid soccerContainer">
 				<div className="row">
-					<div className="col soccerBloc" data-aos="zoom-in">
+					<div className="col soccerBloc pt-3" data-aos="zoom-in">
 						<h2>ADULT SOCCER</h2>
 						<img src={double1} alt=""/>
 						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
 						<button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
 					</div>
-					<div className="col soccerBloc" data-aos="zoom-in">
+					<div className="col soccerBloc pt-3 pb-5" data-aos="zoom-in">
 						<h2>YOUTH SOCCER</h2>
 						<img src={double2} alt=""/>
 						<span>Play, Enjoy and hone your skills. 5v5 is the best development tool</span>
@@ -343,7 +344,7 @@ render(){
 				
 			</div>
 
-
+			<Footer/>
 			
       	</div>  
       

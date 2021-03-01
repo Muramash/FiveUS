@@ -64,6 +64,11 @@
     justify-content: flex-start;
     padding-bottom:1rem;
     width: 100vw;
+
+}
+
+.scheduleCard:hover{
+    
 }
 
 .schedulePicto{
@@ -471,5 +476,9 @@
 @media (min-width: 992px){
     .largeSpacer-3{
         padding: 3em;
+    }
+    .padSmall{
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }

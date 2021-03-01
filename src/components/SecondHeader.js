@@ -22,7 +22,7 @@ class SecondHeader extends React.Component {
     burgerAnimOnHover = (angle) => {
         let burgerImage = $(".burgerImage");
 
-            if(angle == 90){
+            if(angle === 90){
                 burgerImage.css("margin-left", "1.5em");
                 burgerImage.css("margin-top", "1.2em");
                 $({deg: 0}).animate({deg: angle}, {

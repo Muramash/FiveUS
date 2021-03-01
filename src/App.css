@@ -76,6 +76,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* Header */
+
 .mainLogo{
   padding-top: 1rem;
 }
@@ -189,16 +192,6 @@
   pointer-events: none;
 }
 
-.menuMain{
-  display:none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: 1000;
-  background-color: #07356D;
-  overflow-y: auto;
-}
-
 .crossBack {
   width: 30px;
   height: 30px;
@@ -225,6 +218,18 @@
   background-color: #07356D;
   transform: rotate(90deg);
   z-index: 2;
+}
+
+/* Main Menu */
+
+.menuMain{
+  display:none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: #07356D;
+  overflow-y: auto;
 }
 
 .mainList{
@@ -403,3 +408,86 @@
   background-color: #D51317;
 }
 
+/* FOOTER */
+
+.imgFooter{
+  background-image: url("./assets/img/img-footer.jpg");
+  
+  height: 150px;
+}
+
+.redFilter{
+  background: rgba(213, 19, 23, 0.6);
+  z-index: 100;
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.redFilter:hover{
+  background: rgba(7, 53, 109, 0.6);
+  text-decoration: underline;
+  color: white;
+}
+
+.textFooter{
+  font-family: Integral_CF, Arial;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.footerContent{
+  background-color: #07356D;
+}
+
+.footerText{
+  font-family: Avenir_Book, Arial;
+  font-size: 14px;
+  color :#FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.footerBullet{
+  list-style-type: none;
+  text-align: left;
+  font-size: 16px;
+}
+
+.footerPicto{
+  padding:2em;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+@media (min-width: 992px){
+  .footerPicto{
+    padding:1em;
+  }
+}
+.footerPicto:hover{
+  transform: scale(1.3);
+}
+.ptFooter{
+  padding-top: 2em;
+}
+.pbFooter{
+  padding-bottom: 2em;
+}
+
+.footerLink{
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.footerLink:hover{
+  transform: scale(1.1);
+  text-decoration:underline;
+}

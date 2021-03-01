@@ -1,11 +1,9 @@
-.titleBackgroundLea {
-    background-image: url("./../../assets/img/Desktop-7.jpg");
+.titleBackgroundFac {
+    background-image: url("./../../assets/img/facilities-img.jpg");
   
     height: 400px;
   
-    background-attachment: fixed;
-    background-position: center -13em;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 
@@ -20,8 +18,8 @@
   }
 
 @media (max-width: 992px){
-  .titleBackgroundLea {
-    background-image: url("./../../assets/img/Desktop-7.jpg");
+  .titleBackgroundFac {
+    background-image: url("./../../assets/img/facilities-img.jpg");
   
     height: 300px;
   
@@ -87,12 +85,6 @@
 }
 .pageTitleBlue > span{
     color: #23B9D6;
-}
-.pageTitleDarkBlue{
-  background: linear-gradient(to right, #07356D, #fff, #07356D);
-}
-.pageTitleDarkBlue > span{
-  color: #07356D;
 }
 
 .pageSub{
