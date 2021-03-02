@@ -5,7 +5,7 @@ import './css/Facilities.css'
 import { SecondHeader } from './../components/SecondHeader.js'
 import { MainMenu } from './../components/MainMenu.js'
 import { Footer } from './../components/Footer.js'
-import UISelect from './../components/UISelect.js'
+import { UISelect }  from './../components/UISelect.js'
 
 
 
@@ -35,7 +35,7 @@ class Facilities extends Component {
 
 	}
 	openMenu = () => {
-		console.log(this.state.facility);
+		console.log(this.state.selectedFac);
 
 		if(!this.state.menuOpened){
 			$(".menuMain").css("display", "flex");
@@ -61,6 +61,10 @@ class Facilities extends Component {
 		}
 	}
 
+	handleChange = (value) => {
+		this.setState({selectedFac: value});
+		console.log(value);
+	}
 
   	render(){
 
@@ -119,8 +123,8 @@ class Facilities extends Component {
 		<div className="container">
 			<div className="row">
 				<div className="col">
-					<UISelect/>
-					
+					<UISelect selectedFac={this.handleChange}/>
+
 				</div>
 			</div>
 		</div>
