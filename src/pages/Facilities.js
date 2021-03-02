@@ -5,6 +5,10 @@ import './css/Facilities.css'
 import { SecondHeader } from './../components/SecondHeader.js'
 import { MainMenu } from './../components/MainMenu.js'
 import { Footer } from './../components/Footer.js'
+import UISelect from './../components/UISelect.js'
+
+
+
 
 class Facilities extends Component {
 
@@ -13,8 +17,11 @@ class Facilities extends Component {
 		this.state = {
 			context: props.context,
 			menuOpened: false,
+			selectedFac: ""
 		}
 	  }
+
+
 	
 	  
 	componentDidMount() {
@@ -24,8 +31,12 @@ class Facilities extends Component {
 		$(".crossBack").css("display", "none");
 		$(".burgerImage").css("display", "block")
 		$("body").css("overflow", "")
+
+
 	}
 	openMenu = () => {
+		console.log(this.state.facility);
+
 		if(!this.state.menuOpened){
 			$(".menuMain").css("display", "flex");
 			$(".burgerButton").css("background-color", "#fff");
@@ -50,7 +61,36 @@ class Facilities extends Component {
 		}
 	}
 
+
   	render(){
+
+		const facilities = new Map();
+
+		facilities.set('sacramento', {
+			title:"LE FIVE West Sacramento",
+			desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis.",
+			img:"",
+			loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
+			phone:"916-248-5557",
+			calendar:"Business hours"
+		})
+		facilities.set('other', {
+			title:"LE FIVE Other",
+			desc:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+			img:"",
+			loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
+			phone:"916-248-5557",
+			calendar:"Business hours"
+		})
+		facilities.set('foo', {
+			title:"LE FIVE Foo",
+			desc:"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
+			img:"",
+			loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
+			phone:"916-248-5557",
+			calendar:"Business hours"
+		})
+		  
     	return (
 
 <div className="container-fluid p-0">
@@ -76,6 +116,14 @@ class Facilities extends Component {
           	</div>
         </div>
         
+		<div className="container">
+			<div className="row">
+				<div className="col">
+					<UISelect/>
+					
+				</div>
+			</div>
+		</div>
 
 		<div className="largeSpacer-3">
 				

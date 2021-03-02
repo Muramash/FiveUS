@@ -491,3 +491,36 @@
   transform: scale(1.1);
   text-decoration:underline;
 }
+
+/* CUSTOM on : material-ui */
+
+.selectBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiSelect-selectMenu{
+  border-bottom: 2px solid #07356D!important;
+  color: #07356D!important;
+  font-family: Avenir_Black, Arial!important;
+}
+
+.MuiSelect-icon{
+  color: #07356D!important;
+}
+
+.MuiMenuItem-root{
+  color: #07356D!important;
+  font-family: Avenir_Black, Arial!important;
+}
+
+.MuiInputLabel-root{
+  color: #07356D!important;
+  font-family: Avenir_Book, Arial!important;
+}
+
+.MuiButton-label{
+  color: #07356D!important;
+  font-family: Integral_CF, Arial!important;
+}
