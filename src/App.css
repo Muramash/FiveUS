@@ -524,3 +524,7 @@
   color: #07356D!important;
   font-family: Integral_CF, Arial!important;
 }
+
+.MuiSelect-select.MuiSelect-select {
+  padding-right: 100px!important;
+}

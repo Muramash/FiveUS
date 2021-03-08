@@ -146,3 +146,32 @@
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+.facilityTitle{
+  font-family: Avenir_Black, Arial;
+  font-size: 50px;
+  color: #07356D
+}
+
+.facilityDesc{
+  font-family: Avenir_Heavy, Arial;
+  font-size: 18px;
+  color: #07356D
+}
+
+.facilityMap{
+  max-width: 570px;
+}
+
+.contentFacility{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.facilityText{
+  font-family: Avenir_Black, Arial;
+  font-size: 18px;
+  color: #07356D;
+}
