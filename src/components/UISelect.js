@@ -36,7 +36,7 @@ class UISelect extends React.Component {
 
     handleChange = (event) => {
       this.state.selectedFac = event.target.value;
-      this.props.onSelectedFac(event.target.value);
+      console.log(this.state.selectedFac)
       return event.target.value;
       };
 
@@ -77,7 +77,7 @@ class UISelect extends React.Component {
               onClose={this.handleClose}
               onOpen={this.handleOpen}
               value={facility}
-              onChange={this.handleChange}
+              onChange={this.props.handleChange(this.state.selectedFac)}
             >
               <MenuItem value={'sacramento'}>LE FIVE West Sacramento</MenuItem>
               <MenuItem value={'other'}>LE FIVE Other</MenuItem>
