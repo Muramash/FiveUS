@@ -15,7 +15,10 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 
 import map from './../assets/img/map.jpg'
+
 import sacramentoimg from './../assets/img/sacramento_min.jpg'
+import otherimg from './../assets/img/adult-img.jpg'
+import fooimg from './../assets/img/imageCarousel1.jpg'
 
 import calendicon from './../assets/img/cal2-icon.svg'
 import phoneicon from './../assets/img/phone-icon.svg'
@@ -24,6 +27,8 @@ import pinicon from './../assets/img/pin-icon.svg'
 
 import facebook from './../assets/img/facebook_fac.svg'
 import instagram from './../assets/img/instagram_fac.svg'
+
+import penta2 from './../assets/img/motif-penta2.png'
 
 
 class Facilities extends Component {
@@ -61,7 +66,7 @@ class Facilities extends Component {
 					id: 'other',
 					title:"LE FIVE Other",
 					desc:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-					img:"",
+					img: otherimg,
 					loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
 					mail: "contact-west-other@lefive.us",
 					phone:"916-248-5557",
@@ -71,7 +76,7 @@ class Facilities extends Component {
 					id: 'foo',
 					title:"LE FIVE Foo",
 					desc:"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
-					img:"",
+					img:fooimg,
 					loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
 					mail: "contact-west-foo@lefive.us",
 					phone:"916-248-5557",
@@ -83,6 +88,9 @@ class Facilities extends Component {
 
 
 	  handleChange = (event) => {
+		$(".blockFacility").show()
+		$(".largeSpacer-3").show()
+
 		this.state.selectedFac = event.target.value;
 		const facilitiesMap = new Map();
 
@@ -125,7 +133,8 @@ class Facilities extends Component {
 		$(".burgerImage").css("display", "block")
 		$("body").css("overflow", "")
 
-
+		$(".blockFacility").hide()
+		$(".largeSpacer-3").hide()
 	}
 	openMenu = () => {
 		console.log(this.state.selectedFac);
@@ -166,35 +175,6 @@ class Facilities extends Component {
 		const [facility, setFacility] = this.state.selectedFac;
 		const [open, setOpen] = this.state.openState;
 	  
-		const facilities = new Map();
-
-		facilities.set('sacramento', {
-			id: 'sacramento',
-			title:"LE FIVE West Sacramento",
-			desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis.",
-			img:"",
-			loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
-			phone:"916-248-5557",
-			calendar:"Business hours"
-		})
-		facilities.set('other', {
-			id: 'other',
-			title:"LE FIVE Other",
-			desc:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-			img:"",
-			loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
-			phone:"916-248-5557",
-			calendar:"Business hours"
-		})
-		facilities.set('foo', {
-			id: 'foo',
-			title:"LE FIVE Foo",
-			desc:"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.",
-			img:"",
-			loc:"3940 Seaport Blvd Suite #200 West Sacramento, CA 95691",
-			phone:"916-248-5557",
-			calendar:"Business hours"
-		})
 		  
     	return (
 
@@ -256,22 +236,22 @@ class Facilities extends Component {
 				</div>
 			</div>
 
-			<div className="row">
-				<div className="col-lg-6 col-12">
+			<div className="row blockFacility">
+				<div className="col-lg-6 col-12 pb-3">
 					<img src={map} className="facilityMap" id="facility_map"></img>
 				</div>
-				<div className="col-lg-6 col-12">
-					<div className="" id="content_facilityimg">
+				<div className="col-lg-6 col-12 facilityRight">
+					<div className="facilityImg d-none d-lg-block" id="content_facilityimg">
 
 					</div>
 					<div className="row">
-						<div className="col contentFacility">
-							<span><img src={pinicon}></img> <span className="facilityText" id="facility_loc"></span></span>
-							<span><img src={mailicon}></img> <span className="facilityText" id="facility_phone"></span></span>
-							<span><img src={phoneicon}></img> <span className="facilityText" id="facility_mail"></span></span>
-							<span><img src={calendicon}></img> <span className="facilityText" id="facility_calendar"></span></span>
+						<div className="col-12 col-lg-9 contentFacility">
+							<span className="pt-2 pb-2"><img src={pinicon}></img> <span className="facilityText" id="facility_loc"></span></span>
+							<span className="pt-2 pb-2"><img src={mailicon}></img> <span className="facilityText" id="facility_phone"></span></span>
+							<span className="pt-2 pb-2"><img src={phoneicon}></img> <span className="facilityText" id="facility_mail"></span></span>
+							<span className="pt-2 pb-2"><img src={calendicon}></img> <span className="facilityText" id="facility_calendar"></span></span>
 						</div>
-						<div className="col">
+						<div className="pt-3 col-12 col-lg-3 socialFacility">
 							<img src={instagram}></img>
 							<img src={facebook}></img>
 						</div>
@@ -283,7 +263,7 @@ class Facilities extends Component {
 		</div>
 
 		<div className="largeSpacer-3">
-				
+			<img className="d-none d-lg-block secondPentaFac" src={penta2} alt=""/>
 		</div>
 	
 		<Footer/>

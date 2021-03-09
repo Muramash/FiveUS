@@ -67,21 +67,21 @@
 
 }
 .pageTitleGreen{
-    background: linear-gradient(to right, #007A36, rgba(0,0,0,0), #007A36);
+    background: linear-gradient(to right, #007A36, #FFF, #007A36);
 }
 .pageTitleGreen > span{
     color: #007A36;
 }
 
 .pageTitleRed{
-    background: linear-gradient(to right, #D51317, rgba(0,0,0,0), #D51317);
+    background: linear-gradient(to right, #D51317, #FFF, #D51317);
 }
 .pageTitleRed > span{
     color: #D51317;
 }
 
 .pageTitleBlue{
-    background: linear-gradient(to right, #23B9D6, rgba(0,0,0,0), #23B9D6);
+    background: linear-gradient(to right, #23B9D6, #FFF, #23B9D6);
 }
 .pageTitleBlue > span{
     color: #23B9D6;
@@ -166,12 +166,44 @@
 .contentFacility{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-direction: column;
+  text-align: left;
+}
+
+.socialFacility{
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
 }
 
 .facilityText{
   font-family: Avenir_Black, Arial;
   font-size: 18px;
   color: #07356D;
+}
+
+.facilityMap{
+  max-width: 100%;
+}
+
+#facility_img{
+  max-width: 100%;
+}
+
+.facilityRight{
+
+}
+
+@media (min-width: 1140px){
+  .facilityRight{
+    padding-left: 3em;
+  }
+}
+
+.secondPentaFac{
+  position: absolute;
+  left: 1%;
+  top: 60em;
+  z-index: -1;
 }

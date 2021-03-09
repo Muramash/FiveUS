@@ -102,21 +102,22 @@
   }
 
 .scheduleGreen{
-    background: linear-gradient(to right, #007A36, rgba(0,0,0,0), #007A36);
+    background: linear-gradient(to right, #007A36, #FFF, #007A36);
 }
 .scheduleGreen > span{
     color: #007A36;
 }
 
 .scheduleRed{
-    background: linear-gradient(to right, #D51317, rgba(0,0,0,0), #D51317);
+    background: linear-gradient(to right, #D51317, #FFF, #D51317);
 }
+
 .scheduleRed > span{
     color: #D51317;
 }
 
 .scheduleBlue{
-    background: linear-gradient(to right, #23B9D6, rgba(0,0,0,0), #23B9D6);
+    background: linear-gradient(to right, #23B9D6, #FFF, #23B9D6);
 }
 .scheduleBlue > span{
     color: #23B9D6;
@@ -244,9 +245,15 @@
 }
 
 
-@media (max-width: 992px){
+@media (max-width: 1140px){
     .largeSpacer-1{
         padding: 2em;
+    }
+    .descriptionBox>h1{
+        font-family: Integral_CF, "Arial";
+        font-size: 48px;
+        line-height: 48px;
+        padding-bottom:1rem;
     }
 }
 
@@ -269,9 +276,18 @@
     justify-content: flex-start;
     width: 100%;
     text-align: left;
-    padding: 60px;
+    padding: 10px;
 }
-@media (min-width: 992px){
+.blocTextTrio > h2{
+    color: #07356D;
+    font-family: Integral_CF, Arial;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 48px;
+}
+
+@media (min-width: 1140px){
     .blocTextTrio{
         display: flex;
         flex-wrap: wrap;
@@ -280,15 +296,16 @@
         text-align: left;
         padding: 60px;
     }
+    .blocTextTrio > h2{
+        color: #07356D;
+        font-family: Integral_CF, Arial;
+        font-size: 66px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 62px;
+    }
 }
-.blocTextTrio > h2{
-    color: #07356D;
-    font-family: Integral_CF, Arial;
-    font-size: 66px;
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 62px;
-}
+
 
 .blocTextTrio{
     color: #07356D;
@@ -308,7 +325,7 @@
 }
 
 .imageTrioContainer{
-    display:flex!important;
+    display:none!important;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -336,9 +353,12 @@
 .largeSpacer-2{
     padding: 2em;
 }
-@media (min-width: 992px){
+@media (min-width: 1140px){
     .largeSpacer-2{
         padding: 6em;
+    }
+    .imageTrioContainer{
+        display:flex!important;
     }
 }
 
@@ -350,10 +370,22 @@
 
 .soccerBloc{
     display: flex;
-    flex-direction: column;
     align-items: baseline;
+    justify-content: center;
+    flex-flow:column
+    
 }
-@media (min-width: 992px){
+.soccerBloc > h2 {
+    font-family: Integral_CF, "Arial";
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom:1rem;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 1140px){
     .soccerContainer{
         display: flex;
         justify-content: center;
@@ -367,17 +399,13 @@
         padding-bottom: 3em;
         padding-top: 3em;
     }
+    .soccerBloc > h2 {
+        text-align: initial;
+        font-size: 66px;
+        line-height: 62px;
+    }
 }
 
-.soccerBloc > h2 {
-    font-family: Integral_CF, "Arial";
-    font-size: 66px;
-    line-height: 62px;
-    padding-bottom:1rem;
-    width: 50%;
-    text-align: initial;
-    color: #fff;
-}
 
 .soccerBloc > span {
     font-family: Avenir_Book, "Arial";
@@ -386,6 +414,7 @@
     color: #fff;
     padding-bottom: 2em;
     padding-top: 2em;
+    text-align: initial;
 }
 
 .nopadding{
@@ -433,7 +462,7 @@
     z-index: 2;
   }
   
-  @media (min-width: 992px){
+  @media (min-width: 1140px){
     .positionRight{
       margin-top: 4em;
       position: relative;
@@ -459,9 +488,15 @@
       text-align: left;
       padding: 60px;
     }
+    .textBloc > h2 {
+        font-size: 66px!important;
+        line-height: 62px!important;
+        font-family: Integral_CF, Arial;
+        color: #07356D;
+      }
   }
   
-  @media screen and (min-width: 992px) and (max-width: 1200px){
+  @media screen and (min-width: 1140px) and (max-width: 1200px){
     .positionImgRight{
       left: 21.5em;
     }
@@ -473,12 +508,7 @@
 .largeSpacer-3{
     padding: 2em;
 }
-@media (min-width: 992px){
-    .largeSpacer-3{
-        padding: 3em;
-    }
-    .padSmall{
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+
+.imgSoccer{
+    max-width: 100%;
 }

@@ -149,7 +149,7 @@ render(){
               	<img className="blocImage" alt="" src={thirdImage}/>
             	</div>
             	<div className="col-12 col-lg-6 textBloc positionRight">
-             		<h2 className="pb-3">loremipsum SOCCER LEAGUES</h2>
+             		<h2 className="pb-3">lorem ipsum SOCCER LEAGUES</h2>
               		<span className="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod purus vitae dapibus iaculis. Proin arcu leo, tincidunt eget tincidunt non.</span>
               		<div className="blocButtonContainer">
                 		<button type="button" className="btn btn-lg seeMoreButton">Button 1</button>

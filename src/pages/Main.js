@@ -292,15 +292,15 @@ render(){
 
 			<div className="container-fluid soccerContainer">
 				<div className="row">
-					<div className="col soccerBloc pt-3" data-aos="zoom-in">
+					<div className="col-12 col-lg-6 soccerBloc pt-3 pb-5" data-aos="zoom-in">
 						<h2>ADULT SOCCER</h2>
-						<img src={double1} alt=""/>
+						<img className="imgSoccer" src={double1} alt=""/>
 						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
 						<button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
 					</div>
-					<div className="col soccerBloc pt-3 pb-5" data-aos="zoom-in">
+					<div className="col-12 col-lg-6 soccerBloc pt-3 pb-5" data-aos="zoom-in">
 						<h2>YOUTH SOCCER</h2>
-						<img src={double2} alt=""/>
+						<img className="imgSoccer" src={double2} alt=""/>
 						<span>Play, Enjoy and hone your skills. 5v5 is the best development tool</span>
 						<button type="button" className="btn btn-lg seeMoreButton learnMore">Learn more</button>
 					</div>
